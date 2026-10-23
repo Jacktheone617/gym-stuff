@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#246448">
+<title>Gym Stuff · Local preview</title>
+<link rel="stylesheet" href="style.css">
+<script src="plan.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<div class="preview-note">LOCAL PREVIEW <span>Saved in this browser · separate from your Android app</span></div>
+<div class="app">
+<header><a href="#" id="brand" aria-label="Gym Stuff home"><span class="logo">▥</span> GYM STUFF</a><span class="unit">KG</span></header>
+<nav aria-label="Main navigation"><button data-tab="Train">Train</button><button data-tab="Routines">Routines</button><button data-tab="History">History</button></nav>
+<main id="content"></main>
+<footer>One workout at a time.</footer>
+</div>
+<dialog id="name-dialog"><form id="name-form"><h2 id="dialog-title"></h2><label for="name">Name</label><input id="name" required maxlength="80" autocomplete="off"><div class="actions"><button type="button" id="cancel">Cancel</button><button class="primary">Save</button></div></form></dialog>
+<div id="toast" role="status"></div>
+<input type="file" id="restore-file" accept="application/json,.json" hidden>
+</body>
+</html>
